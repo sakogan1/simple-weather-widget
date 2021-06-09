@@ -5,7 +5,7 @@
         function successFunction(position) {
             let lat = position.coords.latitude;
             let long = position.coords.longitude;
-            fetch(`http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${long}&limit=1&appid=5b0e1bd4d251c987ccdcdc29ce35e7e8&lang=de&units=metric`)
+            fetch(`https://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${long}&limit=1&appid=5b0e1bd4d251c987ccdcdc29ce35e7e8&lang=de&units=metric`)
             .then(response => response.json())
             .then(json => {
         console.log(json)
